@@ -1,2 +1,2 @@
-# Aetherium
-Aetherium is a mod inspired heavily by Thaumcraft and lightly by a quest in Bethesda Game Studio's Dawnguard DLC to Skyrim
+# The Update.json Branch
+is used to house the update.json file used in the Forge Update Checker.
