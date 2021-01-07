@@ -12,6 +12,7 @@ modId="aetherium"
 
 version="${file.jarVersion}"
 
+updateJSONURL="https://raw.githubusercontent.com/GamingZacharyC/Aetherium/update.json/update.json"
 
 # Display stuff. Purely for UI.
 displayName="Aetherium"
