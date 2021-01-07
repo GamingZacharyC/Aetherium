@@ -10,16 +10,18 @@ issueTrackerURL="http://my.issue.tracker/"
 
 modId="aetherium"
 
-version="${file.jarVersion}"
+version='${Version}'
 
 updateJSONURL="https://raw.githubusercontent.com/GamingZacharyC/Aetherium/update.json/update.json"
 
 # Display stuff. Purely for UI.
 displayName="Aetherium"
+# TODO: Add a banner (logo)
 logoFile="logio.png"
 credits="Microsoft for hosting GitHub, SilentChaos512 for the tutorials, and the kind people using the Stack Overflow services"
 authors="GamingZacharyC"
 displayURL="https://gamingzacharyc.github.io/Aetherium/"
+# TODO: Add a real description for the mod
 description='''
 This is currently blank for storytelling and winging-it reasons
 '''
@@ -36,4 +38,11 @@ This is currently blank for storytelling and winging-it reasons
     mandatory=true
     versionRange="[1.16.4,1.17)"
     ordering="NONE"
+    side="BOTH"
+
+[[dependencies.aetherium]]
+    modId="jei"
+    mandatory=false
+    versionRange="[7.6.1.60,)"
+    ordering="AFTER"
     side="BOTH"
