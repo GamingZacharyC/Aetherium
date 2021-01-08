@@ -36,7 +36,7 @@ This is currently blank for storytelling and winging-it reasons
 [[dependencies.aetherium]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.4,1.17)"
+    versionRange="[1.16.4]"
     ordering="NONE"
     side="BOTH"
 
