@@ -7,13 +7,17 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
 import java.util.function.Supplier;
 
 public class modBlocks {
+    //public static final  RegistryObject<Block> TEST_BLOCK = register("test_block", () ->
+    //         new Block(AbstractBlock.Properties.create(Material.mat).hardnessAndResistance(Hardness, Resitance).harvestLevel(HarvestLevel).sound(SoundType.Sound)));
+
     public static final  RegistryObject<Block> TEST_BLOCK = register("test_block", () ->
-            new Block(AbstractBlock.Properties.create(Material.CAKE).hardnessAndResistance(1, 0).harvestLevel(1).sound(SoundType.BAMBOO_SAPLING)));
+            new Block(AbstractBlock.Properties.create(Material.CAKE).hardnessAndResistance(1, 0).harvestLevel(4).sound(SoundType.BAMBOO_SAPLING).harvestTool(ToolType.PICKAXE).doesNotBlockMovement().noDrops().notSolid()));
 
     public static final  RegistryObject<Block> TEST_BLOCK_TWO = register("test_block_two", () ->
             new Block(AbstractBlock.Properties.create(Material.BAMBOO_SAPLING).hardnessAndResistance(1, 0).harvestLevel(1).sound(SoundType.CROP)));

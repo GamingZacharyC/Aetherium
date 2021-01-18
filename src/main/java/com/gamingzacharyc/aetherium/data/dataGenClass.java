@@ -1,5 +1,6 @@
 package com.gamingzacharyc.aetherium.data;
 
+import com.gamingzacharyc.aetherium.data.client.modBlockStateProvider;
 import com.gamingzacharyc.aetherium.data.client.modItemModelProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -17,5 +18,6 @@ public final class dataGenClass {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
         gen.addProvider(new modItemModelProvider(gen, existingFileHelper));
+        gen.addProvider(new modBlockStateProvider(gen, existingFileHelper));
     }
 }
